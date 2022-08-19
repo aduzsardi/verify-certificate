@@ -1,0 +1,29 @@
+{
+    "channel": "#general",
+    "username": "Certificate-Bot",
+    "attachments": [
+        {
+            "fallback": "Certificate Robot Message",
+            "color": "warning",
+            "pretext": "",
+            "text": ":warning: {{ msg }} :warning:",
+            {% if not error_msg %}
+            "fields": [
+                {
+                    "title": "Server",
+                    "value": "{{ domain }}",
+                    "short": false
+                },
+                {
+                    "title": "Days before expire",
+                    "value": "{{ days }}",
+                    "short": false
+                }
+            ],
+            {% endif %}
+            "footer": "<https://github.com/aduzsardi/verify-certificate|GitHub>",
+            "footer_icon": "https://github.githubassets.com/images/modules/logos_page/Octocat.png",
+            "ts": "{{ timestamp }}"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+python-dateutil
+certifi
+cryptography
+jinja2
+requests
