@@ -5,10 +5,10 @@ If there's a certificate about to expire it will send a slack notification , it 
 
 ## Info
 
-- This script is mean to be run in scheduled ci/cd pipeline or in cronjob
+- This script is meant to be run in scheduled ci/cd pipeline or in cronjob
 - There are a few variables that need to be adjusted in the script
 
-**HOSTS** - is list of tuples of ('host', port) pairs, where host is an string and port is an integer
+**HOSTS** - is list of tuples of ('host', port) pairs, where host is a string and port is an integer
 
 **SLACK_WEBHOOK** - is your slack webhook url
 
